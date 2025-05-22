@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSmart - Crop Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-leaf"></i> AgriSmart</h1>
+            <p>Intelligent Crop Recommendation System</p>
+        </header>
+
+        <main class="main-grid">
+            <div class="input-section">
+                <h2>Enter Environmental Parameters</h2>
+                <form id="cropForm">
+                    <div class="form-group">
+                        <label for="nitrogen">
+                            Nitrogen (N) level: <span id="nitrogenValue">50</span> kg/ha
+                        </label>
+                        <input type="range" id="nitrogen" min="0" max="140" value="50" class="slider">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phosphorus">
+                            Phosphorus (P) level: <span id="phosphorusValue">50</span> kg/ha
+                        </label>
+                        <input type="range" id="phosphorus" min="0" max="145" value="50" class="slider">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="potassium">
+                            Potassium (K) level: <span id="potassiumValue">50</span> kg/ha
+                        </label>
+                        <input type="range" id="potassium" min="0" max="205" value="50" class="slider">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="temperature">
+                            Temperature: <span id="temperatureValue">25</span> °C
+                        </label>
+                        <input type="range" id="temperature" min="0" max="50" value="25" step="0.1" class="slider">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="humidity">
+                            Humidity: <span id="humidityValue">50</span>%
+                        </label>
+                        <input type="range" id="humidity" min="0" max="100" value="50" class="slider">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ph">
+                            Soil pH: <span id="phValue">6.5</span>
+                        </label>
+                        <input type="range" id="ph" min="0" max="14" value="6.5" step="0.1" class="slider">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rainfall">
+                            Rainfall: <span id="rainfallValue">100</span> mm
+                        </label>
+                        <input type="range" id="rainfall" min="0" max="500" value="100" class="slider">
+                    </div>
+                    
+                    <button type="submit" class="btn">Recommend Crop</button>
+                </form>
+            </div>
+
+            <div class="output-section" id="outputSection">
+                <div class="result-section" id="resultSection">
+                    <h2>Recommended Crop Will Appear Here</h2>
+                    <div class="placeholder">
+                        <i class="fas fa-seedling"></i>
+                        <p>Adjust the parameters and click "Recommend Crop" to see results</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 AgriSmart Crop Recommendation System</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
