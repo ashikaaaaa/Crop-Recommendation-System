@@ -1,4 +1,4 @@
-# 🌾 Crop Recommendation System using Machine Learning
+## 🌾 Crop Recommendation System using Machine Learning
 
 This project aims to recommend the most suitable crop to grow based on various environmental and soil parameters such as Nitrogen, Phosphorus, Potassium, temperature, humidity, pH, and rainfall. The model leverages machine learning algorithms to make accurate predictions, which can help farmers and agricultural experts make informed decisions.
 
